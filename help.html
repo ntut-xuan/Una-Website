@@ -1,0 +1,120 @@
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+        <meta charset="UTF-8">
+        <meta name="viewpoint" content="width=device-width, initial-scale=1.0">
+        <meta content="This is Una!" name="title" />
+        <meta content="來自於不會寫網頁的 Uriah 寫出來的網頁" name="description" />
+        <meta content="https://cc-una.herokuapp.com/" name="url" />
+        <meta content="https://cdn.discordapp.com/avatars/472408420356456468/600e88eae2804cc8702761b26d1a165f.webp?size=128" property="image" />
+        <meta content="#43B581" data-react-helmet="true" name="theme-color" />
+        <link href="./static/css/output.css" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Lora:wght@600&family=Noto+Sans+Mono&family=Noto+Sans+TC:wght@500&display=swap" rel="stylesheet">
+        <title> Uriah's Website - Help </title>
+    </head>
+    <body>
+        <div class="relative w-screen bg-cover bg-[url('../image/index.jpg')]">
+            <div class="relative w-full h-full bg-black bg-opacity-60 p-10 overflow-hidden">
+                <div class="fixed w-full flex justify-left gap-20 h-fit z-40 bg-transparent items-center">
+                    <div>
+                        <a class="text-3xl text-white font-[Lora]" href="/">
+                            Una Discord Bot
+                        </a>
+                    </div>
+                    <div>
+                        <a class="text-3xl text-white font-[Lora]" href="/help">
+                            Help
+                        </a>
+                    </div>
+                    <div>
+                        <a class="text-3xl text-white font-[Lora]" href="/api">
+                            API
+                        </a>
+                    </div>
+                    <div>
+                        <a class="text-3xl text-white font-[Lora]" href="/about">
+                            About
+                        </a>
+                    </div>
+                </div>
+                <div class="relative top-20 bg-white w-full h-full bg-opacity-80 overflow-auto">
+                    <div class="p-10">
+                        <div>
+                            <p class="text-center text-5xl mb-10"> Codeforces 相關指令 </p>
+                            <div id="item" class="bg-white p-10 rounded hover:bg-gray-100 m-10">
+                                <p class="text-2xl text-center font-mono m-10"> &lt;cf | &lt;handle&gt; </p>
+                                <p class="text-xl text-center"> 查詢帳號的的 Codeforces 資訊，若用戶已經綁定帳號，則可以用 &lt;cf 來速查自己的資料。</p>
+                                <p class="text-xl text-center m-5 text-blue-500 font-mono"> &lt;cf Xuan  </p>
+                            </div>
+                            <div id="item" class="bg-white p-10 rounded hover:bg-gray-100 m-10">
+                                <p class="text-2xl text-center font-mono m-10"> &lt;cf_handle &lt;mention | userID&gt; </p>
+                                <p class="text-xl text-center"> 查詢「用戶」的的 CodeForces 資訊，僅限於該用戶已經綁定帳號。</p>
+                                <p class="text-xl text-center m-5 text-blue-500 font-mono"> &lt;cf_handle 
+                                    <span class="not-italic bg-blue-400 rounded text-white p-1 cursor-pointer hover:bg-blue-600 hover:underline">@6ya</span>
+                                </p>
+                            </div>
+                            <div id="item" class="bg-white p-10 rounded hover:bg-gray-100 m-10">
+                                <p class="text-2xl text-center font-mono m-10"> &lt;cfcontest </p>
+                                <p class="text-xl text-center"> 查詢 CodeForces 近期的競賽時間。 </p>
+                            </div>
+                            <div id="item" class="bg-white p-10 rounded hover:bg-gray-100 m-10">
+                                <p class="text-xl text-center font-mono my-10"> &lt;ac | &lt;account&gt; | &lt;year&gt; &lt;month&gt; | &lt;-rating/-day&gt; | &lt;day&gt; </p>
+                                <p class="text-xl text-center"> 查詢帳號的解題資料，僅限查詢已經綁定的帳號。 </p>
+                                <div class="mt-10 flex gap-5">
+                                    <div class="w-full flex flex-col">
+                                        <div class="flex justify-center">
+                                            <div class="w-full">
+                                                <p class="text-xl text-right m-5 text-blue-500 font-mono justify-end"> &lt;ac Xuan </p>
+                                            </div>
+                                            <div class="w-full">
+                                                <p class="text-xl text-left m-5 text-gray-500 font-mono justify-start"> 可以查詢 Xuan 的當月 AC 資料 </p>
+                                            </div>
+                                        </div>
+                                        <div class="flex justify-center">
+                                            <div class="w-full">
+                                                <p class="text-xl text-right m-5 text-blue-500 font-mono justify-end"> &lt;ac Xuan 2020 07 </p>
+                                            </div>
+                                            <div class="w-full">
+                                                <p class="text-xl text-left m-5 text-gray-500 font-mono justify-start"> 可以查詢 Xuan 在 2020 年 7 月的 AC 資料 </p>
+                                            </div>
+                                        </div>
+                                        <div class="flex justify-center">
+                                            <div class="w-full">
+                                                <p class="text-xl text-right m-5 text-blue-500 font-mono justify-end"> &lt;ac Xuan 2020 07 -day 11 </p>
+                                            </div>
+                                            <div class="w-full">
+                                                <p class="text-xl text-left m-5 text-gray-500 font-mono justify-start"> 可以查詢 Xuan 在 2020 年 7 月 11 日解掉了哪些題目 </p>
+                                            </div>
+                                        </div>
+                                        <div class="flex justify-center">
+                                            <div class="w-full">
+                                                <p class="text-xl text-right m-5 text-blue-500 font-mono"> &lt;ac Xuan 2020 07 -rating </p>
+                                            </div>
+                                            <div class="w-full">
+                                                <p class="text-xl text-left m-5 text-gray-500 font-mono"> 可以查詢 Xuan 在 2020 年 7 月 時解掉的題目（以 rating 來分類） </p>
+                                            </div>
+                                        </div> 
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="item" class="bg-white p-10 rounded hover:bg-gray-100 m-10">
+                                <p class="text-2xl text-center font-mono m-10"> &lt;rr </p>
+                                <p class="text-xl text-center"> 查詢自己的 Codeforces 積分排行。 </p>
+                            </div>
+                        </div>
+                        <div>
+                            <p class="text-center text-5xl mb-10"> Codeforces 註冊相關指令 </p>
+                            <div id="item" class="bg-white p-10 rounded hover:bg-gray-100 m-10">
+                                <p class="text-2xl text-center font-mono m-10"> &lt;reg &lt;handle&gt; </p>
+                                <p class="text-xl text-center"> 綁定 Codeforces 帳號至 Una 的資料庫 </p>
+                                <p class="text-xl text-center m-5 text-blue-500 font-mono"> &lt;reg Xuan  </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
